@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reactangle</title>
+</head>
+<body>
+<script>
+    //class
+    class rectangle{
+        constructor(l,b){
+this.l=l;
+this.b=b;
+        }
+        //for get area
+        get calarea(){
+            return this.findarea();
+        }
+        //find area logic
+         findarea(){
+            return this.l*this.b;
+         }
+        }
+        const area=new rectangle(10,4);//objeft creation
+        console.log(area.calarea);//method call
+        document.write(area.calarea);//method call
+    
+   
+</script>
+</body>
+</html>

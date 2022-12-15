@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .btn:hover {
+            background-color: rgb(37, 78, 37);
+            color: antiquewhite;
+        }
+        
+        .button {
+            padding-bottom: 4%;
+        }
+        
+        .btn {
+            margin-left: 40px;
+            background-color: rgb(26, 135, 224);
+            border: none;
+            border-radius: 10%;
+            height: 4vh;
+            width: auto;
+            color: aliceblue;
+        }
+        
+        *input {
+            border: none;
+        }
+        
+        .inner {
+            display: inline-flexbox;
+            margin: 50px;
+        }
+        
+        .h1 {
+            margin-top: 20%;
+            padding-top: 2%;
+        }
+        
+        .table {
+            width: 200;
+        }
+        
+        .main {
+            background: blueviolet;
+            width: 500PX;
+            height: auto;
+            align-items: center;
+            margin-left: 35%;
+            margin-top: 10%;
+            border-radius: 10px;
+        }
+        
+        .error {
+            color: rgb(237, 219, 219);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <div class="inner">
+                <div class="h1" align="center">
+                    <h1>Sign Up !</h1>
+                </div>
+                <div class="table">
+                    <table cellspacing="2" align="center" cellpadding="8" border="0">
+                        <tr>
+                            <td> User Name:</td>
+                            <td>
+                                <input type="email" name="" id="user" placeholder="enter email id" class="user" id="username"><br><span id="uerror" class="error" type="usern" name="e"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Password:</td>
+                            <td><input type="password" name="" id="pass" class="pwd" placeholder="enter  4 character password"><br><span id="perror" class="error" type="usern" name="e"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Confirm Password:</td>
+                            <td><input type="password" name="" id="pass1" class="pwd1" placeholder="enter  4 character password"><br><span id="pperror" class="error" type="usern" name="e"></span></td>
+                        </tr>
+                        <tr>
+                            <td>country</td>
+                            <td><select name="" id="select" placeholder="select country" class="country" title="sele">
+        <option value="" id="contryid" selected>choose</option>
+        <option value="">India</option>
+        <option value="">UK</option>
+        <option value="">US</option>
+        <option value="">GERMANY</option>
+        <option value="">CANADA</option>
+    </select> <br><span id="cerror" class="error" type="usern" name="e"></span></td>
+
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td name="myoption">
+                                <label class="male">
+            <input type="radio" id="male" name="yesno"> male
+        </label> &nbsp;&nbsp;&nbsp;
+                                <label class="female">
+                <input type="radio" id="female" name="yesno"> Female
+            </label>
+                                <br><span id="gerror" class="error" type="usern" name="e"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Active</td>
+                            <td>
+                                <label class="active">
+            <input type="checkbox" title="ch" id="check"> 
+        </label>
+                                <br><span id="aerror" class="error" type="usern" name="e"></span>
+                            </td>
+                        </tr>
+                        <tr class="button">
+                            <td><button type="submit" class="btn" onclick="signup()">Submit</button></td>
+                            <td><button type="reset" class="btn">Cancel</button></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>max element find</title>
+    <style>
+        .btn:hover{
+            background-color:green;
+            color:white;
+        }
+       .btn{
+        margin-left: 40px ;
+        background-color: rgb(26, 135, 224);
+        border: none;
+        border-radius: 10%;
+        height: 4vh;
+        width: auto;
+        color: aliceblue;
+       } 
+    </style>
+</head>
+<body>
+  
+    <script>
+       var n=prompt("enter the no of array");
+       var arr=[];
+       //for input array
+for(var i=0;i<n;i++){
+var a=prompt("enter element in array");
+arr.push(a);
+}
+//for finding max array
+var max=arr[0];
+for(let i=0;i<n;i++)
+{
+    if(arr[i]>max){
+        max=arr[i];
+    }
+}
+document.write("maximum array is:"+max);
+    </script>
+</body>
+</html>

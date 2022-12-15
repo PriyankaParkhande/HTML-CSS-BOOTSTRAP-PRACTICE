@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>packages</title>
+    <style>
+        body{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        h1{
+            text-align: center;
+            padding-top: 10px;
+            color: rgb(51, 21, 21);
+            text-shadow: 18px 10px 6px rgb(83 83 83 / 43%);
+        }
+        .block{
+            display: block;
+            border: 1px solid black;
+            padding-left: 10px;
+            margin-left: 40px;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(243 199 171);
+        }
+        .block:hover{
+            
+            margin-top: -20px;
+        }
+        .block1{
+            display: block;
+            border: 1px solid black;
+            padding-left: 10px;     
+            margin-left: 40px;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(230, 240, 239);
+        }
+        .block1:hover{
+            
+            margin-top: -20px;
+        }
+        .block2{
+            display: block;
+            border: 1px solid black;
+            padding-left: 10px;
+            margin-left: 40px;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(230, 240, 239);
+        }
+        .block2:hover{
+           
+            margin-top: -20px;
+        }
+        .block3{
+            display: block;
+            border: 1px solid black;
+            padding-left: 10px;
+            margin-left: 40px;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(230, 240, 239);
+        }
+        .block3:hover{
+           
+            margin-top: -20px;
+        }
+        .container p{
+            color: black;
+        }
+      
+       
+        .container h4{
+            display: inline-block;
+            color: white;
+            background-color: #6a84bb;
+            padding: 9px;
+            border-radius: 5px;
+            text-decoration: none;
+            box-shadow: 9px 8px 8px #0505056b;
+        }
+        .container{
+            display: inline-flex;
+            margin-top: 40px
+
+        }
+        .container h3{
+            color:#004899;
+        }
+       .container a{
+           text-decoration: none;
+           color: rgb(230 240 239);
+       }
+      /* .container h4:hover{
+           background-color: black;
+         
+       }
+       .container a:hover{
+           color: white;
+       }*/
+       .div{
+            display: block;
+            border: 1px solid black;
+            padding-left: 10px;
+            margin-left: 40px;
+            margin-top: 40px;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(230, 240, 239);
+        }
+        .div:hover{
+            
+            margin-top: 10px;
+        }
+        .div1{
+            display: block;
+            border: 1px solid black;
+            padding-left: 10px;     
+            margin-left: 40px;
+            margin-top: 40px;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(230, 240, 239);
+        }
+        .div1:hover{
+            
+            margin-top: 10px;
+        }
+        .div2{
+            display: block;
+            border: 1px solid black;
+            padding-left: 10px;
+            margin-left: 40px;
+            margin-top: 40px;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(230, 240, 239);
+        }
+        .div2:hover{
+           
+            margin-top: 10px;
+        }
+        .div3{
+            display: block;
+            border: 1px solid black;
+            padding-left: 10px;
+            margin-left: 40px;
+            margin-top: 40px;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(230, 240, 239);
+        }
+        .div3:hover{
+           
+            margin-top: 10px;
+        }
+        .division p{
+            color: black;
+        }
+      
+       
+        .division h4{
+            display: inline-block;
+            color: white;
+            background-color: #6a84bb;
+            padding: 9px;
+            border-radius: 5px;
+            text-decoration: none;
+            box-shadow: 9px 8px 8px #0505056b;
+        }
+        .division{
+            display: inline-flex;
+
+        }
+        .division h3{
+            color:#004899;
+        }
+       .division a{
+           text-decoration: none;
+           color: rgb(230 240 239);
+       }
+       
+
+       .test{
+            display: block;
+            border: 1px solid black;
+            padding-left: 10px;
+            margin-left: 40px;
+            margin-top: 40px;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(243 199 171);
+        }
+        .test:hover{
+            
+            margin-top: 10px;
+        }
+        .test1{
+            display: block;
+            border: 1px solid black;
+            padding-left: 10px;     
+            margin-left: 40px;
+            margin-top: 40px;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(230, 240, 239);
+        }
+        .test1:hover{
+            
+            margin-top: 10px;
+        }
+        .test2{
+            display: block;
+            border: 1px solid black;
+            padding-left: 10px;
+            margin-left: 40px;
+            margin-top: 40px;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(230, 240, 239);
+        }
+        .test2:hover{
+           
+            margin-top: 10px;
+        }
+        .test3{
+            display: block;
+            border: 1px solid black;
+            padding-left: 10px;
+            margin-left: 40px;
+            margin-top: 40px;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(230, 240, 239);
+        }
+        .test3:hover{
+           
+            margin-top: 10px;
+        }
+        .advance p{
+            color: black;
+        }
+      
+       
+        .advance h4{
+            display: inline-block;
+            color: white;
+            background-color: #6a84bb;
+            padding: 9px;
+            border-radius: 5px;
+            text-decoration: none;
+            box-shadow: 9px 8px 8px #0505056b;
+        }
+        .advance{
+            display: inline-flex;
+
+        }
+        .advance h3{
+            color:#004899;
+        }
+       .advance a{
+           text-decoration: none;
+           color: rgb(230 240 239);
+       }
+
+
+       .roll{
+            display: block;
+            border: 1px solid black;
+            padding-left: 10px;
+            margin-left: 40px;
+            margin-top: 40px;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(230, 240, 239);
+        }
+        .roll:hover{
+            
+            margin-top: 10px;
+        }
+        .roll1{
+            display: block;
+            border: 1px solid black;
+            padding-left: 10px;     
+            margin-left: 40px;
+            margin-top: 40px;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(230, 240, 239);
+        }
+        .roll1:hover{
+            
+            margin-top: 10px;
+        }
+        .roll2{
+            display: block;
+            border: 1px solid black;
+            padding-left: 10px;
+            margin-left: 40px;
+            margin-top: 40px;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(230, 240, 239);
+        }
+        .roll2:hover{
+           
+            margin-top: 10px;
+        }
+        .roll3{
+            display: block;
+            border: 1px solid black;
+            padding-left: 10px;
+            margin-left: 40px;
+            margin-top: 40px;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(230, 240, 239);
+        }
+        .roll3:hover{
+           
+            margin-top: 10px;
+        }
+        .section p{
+            color: black;
+        }
+      
+       
+        .section h4{
+            display: inline-block;
+            color: white;
+            background-color: #6a84bb;
+            padding: 9px;
+            border-radius: 5px;
+            text-decoration: none;
+            box-shadow: 9px 8px 8px #0505056b;
+        }
+        .section{
+            display: inline-flex;
+
+        }
+        .section h3{
+            color:#004899;
+        }
+       .section a{
+           text-decoration: none;
+           color: rgb(230 240 239);
+       }
+      
+
+       .full{
+            display: block;
+            border: 1px solid black;
+            padding-left: 10px;
+            margin-left: 40px;
+            margin-top: 40px;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(243 199 171);
+        }
+        .full:hover{
+            
+            margin-top: 10px;
+        }
+        .full1{
+            display: block;
+            border: 1px solid black;
+            padding-left: 10px;     
+            margin-left: 40px;
+            margin-top: 40px;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(230, 240, 239);
+        }
+        .full1:hover{
+            
+            margin-top: 10px;
+        }
+        .full2{
+            display: block;
+            border: 1px solid black;
+            padding-left: 10px;
+            margin-left: 40px;
+            margin-top: 40px;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(230, 240, 239);
+        }
+        .full2:hover{
+           
+            margin-top: 10px;
+        }
+        .full3{
+            display: block;
+            border: 1px solid black;
+            padding-left: 10px;
+            margin-left: 40px;
+            margin-top: 40px;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(230, 240, 239);
+        }
+        .full3:hover{
+           
+            margin-top: 10px;
+        }
+        .checkup p{
+            color: black;
+        }
+      
+       
+        .checkup h4{
+            display: inline-block;
+            color: white;
+            background-color: #6a84bb;
+            padding: 9px;
+            border-radius: 5px;
+            text-decoration: none;
+            box-shadow: 9px 8px 8px #0505056b;
+        }
+        .checkup{
+            display: inline-flex;
+
+        }
+        .checkup h3{
+            color:#004899;
+        }
+       .checkup a{
+           text-decoration: none;
+           color: rgb(230 240 239);
+       }
+      
+
+       .sub{
+            display: block;
+            border: 1px solid black;
+            padding-left: 10px;
+            margin-left: 40px;
+            margin-top: 40px;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(230, 240, 239);
+        }
+        .sub:hover{
+            
+            margin-top: 10px;
+        }
+        .sub1{
+            display: block;
+            border: 1px solid black;
+            padding-left: 10px;     
+            margin-left: 40px;
+            margin-top: 40px;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(230, 240, 239);
+        }
+        .sub1:hover{
+            
+            margin-top: 10px;
+        }
+        .sub2{
+            display: block;
+            border: 1px solid black;
+            padding-left: 10px;
+            margin-left: 40px;
+            margin-top: 40px;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(230, 240, 239);
+        }
+        .sub2:hover{
+           
+            margin-top: 10px;
+        }
+        .sub3{
+            display: block;
+            border: 1px solid black;
+            padding-left: 10px;
+            margin-left: 40px;
+            margin-top: 40px;
+            width: 25%;
+            border-radius: 10px;
+            background-color: rgb(230, 240, 239);
+        }
+        .sub3:hover{
+           
+            margin-top: 10px;
+        }
+        .subcheck p{
+            color: black;
+        }
+      
+       
+        .subcheck h4{
+            display: inline-block;
+            color: white;
+            background-color: #6a84bb;
+            padding: 9px;
+            border-radius: 5px;
+            text-decoration: none;
+            box-shadow: 9px 8px 8px #0505056b;
+        }
+        .subcheck{
+            display: inline-flex;
+
+        }
+        .subcheck h3{
+            color:#004899;
+        }
+       .subcheck a{
+           text-decoration: none;
+           color: rgb(230 240 239);
+       }
+      
+    </style>
+</head>
+<body>
+
+       <img src="image/packbg.jpg" alt="">  
+        <h1>BASIC TEST</h1>
+        <div class="container">
+    <div class="block">
+    <h3>BASIC TEST PACKAGES</h3>
+    <p>1.Anti-nuclear antibody</p>
+    <p>2.Blood Chemistry Studyt </p>
+    <p>3.Blood Lipid Profile</p>
+    <p>Download sample report</p>
+    <p><b>₹ 499</b></p>
+    <h4><a href="regestration.html">BOOK NOW</a></h4>
+    </div>
+
+        <div class="block1">
+        <h3>GLUCOSE, FASTING (F)</h3>
+        <p>Minimum 8 hours fasting is mandatory.</p>
+        <p>1 parameter(s) covered </p>
+        <p>Daily Checkup</p>
+        <p>Download sample report</p>
+        <p><b>₹ 200</b></p>
+        <h4><a href="regestration.html">BOOK NOW</a></h4>
+    </div>
+            <div class="block2">
+            <h3>URINE EXAMINATION, ROUTINE; URINE, R/E</h3>
+            <p>First morning urine sample preferred.</p>
+            <p>16 parameter(s) covered </p>
+            <p>Daily Checkup</p>
+            <p>Download sample report</p>
+            <p><b>₹ 100</b></p>
+            <h4><a href="regestration.html">BOOK NOW</a></h4>
+        </div>
+        <div class="block3">
+            <h3>HEMOGLOBIN; Hb</h3>
+            <p>No special preparation required</p>
+            <p>1 parameter(s) covered </p>
+            <p>Daily Checkup</p>
+            <p>Download sample report</p>
+            <p><b>₹ 50</b></p>
+            <h4><a href="regestration.html">BOOK NOW</a></h4>
+        </div>
+</div>
+
+<div class="division">
+    <div class="div">
+    <h3>BLOOD GROUP ABO & RH FACTOR</h3>
+    <p>No special preparation required</p>
+    <p>1 parameter(s) covered </p>
+    <p>Daily Checkup</p>
+    <p>Download sample report</p>
+    <p><b>₹ 80</b></p>
+    <h4><a href="regestration.html">BOOK NOW</a></h4>
+    </div>
+
+        <div class="div1">
+        <h3>MALARIA PARASITE / BLOOD PARASITE IDENTIFICATION</h3>
+        <p>No special preparation required</p>
+        <p>2 parameter(s) covered </p>
+        <p>Daily Checkup</p>
+        <p>Download sample report</p>
+        <p><b>₹ 100</b></p>
+        <h4><a href="regestration.html">BOOK NOW</a></h4>
+    </div>
+            <div class="div2">
+            <h3>GLUCOSE, POST PRANDIAL (PP), 2 HOURS</h3>
+            <p>Sample to be given exactly 2 hours after starting meal.</p>
+            <p>1 parameter(s) covered </p>
+            <p>Daily Checkup</p>
+            <p>Download sample report</p>
+            <p><b>₹ 60</b></p>
+            <h4><a href="regestration.html">BOOK NOW</a></h4>
+        </div>
+        <div class="div3">
+            <h3>CHOLESTEROL, TOTAL</h3>
+            <p>No special preparation required.</p>
+            <p>1 parameter(s) covered </p>
+            <p>Daily Checkup</p>
+            <p>Download sample report</p>
+            <p><b>₹ 80</b></p>
+            <h4><a href="regestration.html">BOOK NOW</a></h4>
+        </div>
+</div>
+<br><br><hr>
+<h1>ADVANCE TEST</h1>
+
+<div class="advance">
+    <div class="test">
+    <h3>ADVANCE TEST</h3>
+    <p>1.Cholestrol test</p>
+    <p>2.Blood sugar test </p>
+    <p>3.Liver function test</p>
+    <p>Download sample report</p>
+    <p><b>₹ 799</b></p>
+    <h4><a href="regestration.html">BOOK NOW</a></h4>
+    </div>
+
+        <div class="test1">
+        <h3>ESR; ERYTHROCYTE SEDIMENTATION RATE</h3>
+        <p>Overnight fasting is preferred.</p>
+        <p>1 parameter(s) covered </p>
+        <p>Daily Checkup</p>
+        <p>Download sample report</p>
+        <p><b>₹ 100</b></p>
+        <h4><a href="regestration.html">BOOK NOW</a></h4>
+    </div>
+            <div class="test2">
+            <h3>C-REACTIVE PROTEIN; CRP</h3>
+            <p>Sample to be given exactly 2 hours after starting meal.</p>
+            <p>1 parameter(s) covered </p>
+            <p>Daily Checkup</p>
+            <p>Download sample report</p>
+            <p><b>₹ 160</b></p>
+            <h4><a href="regestration.html">BOOK NOW</a></h4>
+        </div>
+        <div class="test3">
+            <h3>WIDAL SLIDE AGGLUTINATION TEST</h3>
+            <p>No special preparation required.</p>
+            <p>1 parameter(s) covered </p>
+            <p>Daily Checkup</p>
+            <p>Download sample report</p>
+            <p><b>₹ 90</b></p>
+            <h4><a href="regestration.html">BOOK NOW</a></h4>
+        </div>
+</div>
+
+
+<div class="section">
+    <div class="roll">
+    <h3>CEA; CARCINO EMBRYONIC ANTIGEN</h3>
+    <p>Give brief clinical history.</p>
+    <p>1 parameter(s) covered </p>
+    <p>Daily Checkup</p>
+    <p>Download sample report</p>
+    <p><b>₹ 799</b></p>
+    <h4><a href="regestration.html">BOOK NOW</a></h4>
+    </div>
+
+        <div class="roll1">
+        <h3>ABSOLUTE EOSINOPHIL COUNT; AEC</h3>
+        <p>No special preparation required</p>
+        <p>3 parameter(s) covered </p>
+        <p>Daily Checkup</p>
+        <p>Download sample report</p>
+        <p><b>₹ 100</b></p>
+        <h4><a href="regestration.html">BOOK NOW</a></h4>
+    </div>
+            <div class="roll2">
+            <h3>MALARIA PARASITE CONFIRMATION</h3>
+            <p>Sample to be given exactly 2 hours after starting meal.</p>
+            <p>1 parameter(s) covered </p>
+            <p>Daily Checkup</p>
+            <p>Download sample report</p>
+            <p><b>₹120</b></p>
+            <h4><a href="regestration.html">BOOK NOW</a></h4>
+        </div>
+        <div class="roll3">
+            <h3>CORTISOL, SERUM (MORNING SAMPLE)</h3>
+            <p>Sample must be drawn between 7-11 am.</p>
+            <p>1 parameter(s) covered </p>
+            <p>Daily Checkup</p>
+            <p>Download sample report</p>
+            <p><b>₹ 80</b></p>
+            <h4><a href="regestration.html">BOOK NOW</a></h4>
+        </div>
+</div>
+
+
+<h1>FULL BODY CHECKUP</h1>
+
+<div class="checkup">
+    <div class="full">
+        <h3>COMPLETE BODY CHEK-UP</h3>
+        <p>No special preparation required</p>
+        <p>26 parameter(s) covered </p>
+        <p>Daily Checkup</p>
+        <p>Download sample report</p>
+        <p><b>₹ 1099</b></p>
+        <h4><a href="regestration.html">BOOK NOW</a></h4>
+    </div>
+
+        <div class="full1">
+            <h3>DIABETICS GLUCOSE, FASTING (F)</h3>
+            <p>Minimum 8 hours fasting is mandatory.</p>
+            <p>1 parameter(s) covered </p>
+            <p>Daily Checkup</p>
+            <p>Download sample report</p>
+            <p><b>₹ 120</b></p>
+            <h4><a href="regestration.html">BOOK NOW</a></h4>
+    </div>
+            <div class="full2">
+                <h3>URINE EXAMINATION, ROUTINE; URINE, R/E</h3>
+                <p>First morning urine sample preferred.</p>
+                <p>16 parameter(s) covered </p>
+                <p>Daily Checkup</p>
+                <p>Download sample report</p>
+                <p><b>₹ 110</b></p>
+                <h4><a href="regestration.html">BOOK NOW</a></h4>
+        </div>
+        <div class="full3">
+            <h3>PRT</h3>
+            <p>No special preparation required.</p>
+            <p>16 parameter(s) covered </p>
+            <p>Daily Checkup</p>
+            <p>Download sample report</p>
+            <p><b>₹ 199</b></p>
+            <h4><a href="regestration.html">BOOK NOW</a></h4>
+        </div>
+</div>
+
+
+<div class="subcheck">
+    <div class="sub">
+        <h3>Cardiac system Test</h3>
+        <p>No special preparation required.</p>
+        <p>3 parameter(s) covered </p>
+        <p>Daily Checkup</p>
+        <p>Download sample report</p>
+        <p><b>₹ 299</b></p>
+        <h4><a href="regestration.html">BOOK NOW</a></h4>
+    </div>
+
+        <div class="sub1">
+            <h3>Lipid Profile Test</h3>
+            <p>It requires 12 hours of Fast(no food or drink.ecept water)</p>
+            <p>13 parameter(s) covered </p>
+            <p>Daily Checkup</p>
+            <p>Download sample report</p>
+            <p><b>₹ 100</b></p>
+            <h4><a href="regestration.html">BOOK NOW</a></h4>
+    </div>
+            <div class="sub2">
+                <h3>Typhoid Function Test</h3>
+                <p>Minimum 8 hours fasting is mandatory.</p>
+                <p>16 parameter(s) covered </p>
+                <p>Daily Checkup</p>
+                <p>Download sample report</p>
+                <p><b>₹ 200</b></p>
+                <h4><a href="regestration.html">BOOK NOW</a></h4>
+        </div>
+        <div class="sub3">
+            <h3>Kidney Function Test</h3>
+            <p>No special preparation required.</p>
+            <p>12 parameter(s) covered </p>
+            <p>Daily Checkup</p>
+            <p>Download sample report</p>
+            <p><b>₹ 190</b></p>
+            <h4><a href="regestration.html">BOOK NOW</a></h4>
+        </div>
+</div>
+
+</body>
+</html>
+
+

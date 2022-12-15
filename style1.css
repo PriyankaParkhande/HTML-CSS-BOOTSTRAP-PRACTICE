@@ -1,0 +1,49 @@
+.form-ele
+{
+    display: inline-block;
+    margin-left: 50%;
+}
+.btn:hover
+{
+background-color: rgb(44, 102, 44);
+color: white;
+}
+
+.btn
+{
+    
+
+    height:4vh;
+    width:12ex;
+    border-radius: 5px;
+    border: none;
+    margin-left: 10;
+    color: rgb(7, 8, 10);
+
+    background-color: rgb(0, 81, 255);
+}
+*main{
+    align-items: center;
+    position: sticky;
+    width: 25%;
+    display: inline;
+    
+}
+
+form{
+    display: inline-block;
+    
+}
+h1{
+    margin-top: 12%;
+    margin-left: 53%;
+    align-items: center;
+}
+.error
+{
+    color: rgb(228, 35, 35);
+    background-color: rgb(187, 139, 231);
+}
+span{
+    margin-left: 2;
+}

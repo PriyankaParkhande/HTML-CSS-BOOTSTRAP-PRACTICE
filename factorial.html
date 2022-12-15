@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial of no</title>
+    <style>
+        .btn:hover{
+            background-color:green;
+            color:white;
+        }
+       .btn{
+        margin-left: 40px ;
+        background-color: rgb(26, 135, 224);
+        border: none;
+        border-radius: 10%;
+        height: 4vh;
+        width: auto;
+        color: aliceblue;
+       } 
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="po">Find Factorial</h1>
+        <div>
+            <form action="">
+                <input type="text" placeholder="input no" id="no" >
+                <button type="submit" id="button120" class="btn" onclick="factorial()">find factorial</button>
+                
+               </form>
+        </div>
+    </div>
+    <p id="par"></p>
+    <script>
+    //factorial logic
+    function factorial(){
+        var n=document.getElementById("no").value;
+        var fact=1; 
+        for(var i=1;i<=n;i++)
+        {   
+            fact=fact*i;
+        }
+        document.write("factorial of given no is:" +fact);//to print factorial ofgiven no
+    }
+  
+    </script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+
+        <div class="contact">
+            <label for="name">name</label>
+            <input type="text" name="" id="name" placeholder="enter your name" onkeyup="namevalid()">
+            <span class="error" id="nerror"></span>
+            <br>
+            <label> contact no</label>
+            <input type="text" placeholder="enter contact no" id="contact" onkeyup="cotactvalid()"> <span id="cerror" class="error"></span>
+        </div>
+    </center>
+
+    <script>
+        function namevalid() {
+            var namecheck = document.getElementById("name").value;
+            var namerejax = /[a-zA-Z ]/;
+            if (namecheck = "") {
+                document.getElementById("nerror").innerHTML = "name cannot empty";
+                document.getElementById("name").focus();
+            } else if (!namerejax.test(namecheck)) {
+                document.getElementById("nerror").innerHTML = "Only enter character";
+                document.getElementById("name").focus();
+            } else {
+                document.getElementById("nerror").innerHTML = "Success";
+            }
+        }
+
+        function cotactvalid() {
+            var contactCheck = document.getElementById("contact").value;
+            var checkno = /[6-9][0-9]{9}/;
+            if (contactCheck = "") {
+                document.getElementById("cerror").innerHTML = "number should not be empty";
+                document.getElementById("contact").focus();
+            } else {
+                document.getElementById("cerror").innerHTML = "";
+            }
+            if (contactCheck.length > 10 | contactCheck.length < 10) {
+                document.getElementById("cerror").innerHTML = "length should be atleast 10";
+                document.getElementById("contact").focus();
+            } else if (!checkno.test(contactCheck)) {
+                document.getElementById("cerror").innerHTML = "please enter only number";
+                document.getElementById("contact").focus();
+            } else {
+                document.getElementById("cerror").innerHTML = "";
+            }
+        }
+    </script>
+</body>
+
+</html>

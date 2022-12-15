@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find max array element</title>
+    <style>
+        .btn:hover {
+            background-color: green;
+            color: white;
+        }
+        
+        .btn {
+            margin-left: 40px;
+            background-color: rgb(26, 135, 224);
+            border: none;
+            border-radius: 10%;
+            height: 4vh;
+            width: auto;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="">
+            <h1 id="po"> Enter element in array</h1>
+            <input type="text" name="array[]" placeholder="enter array element "><br>
+            <input type="text" name="array[]" placeholder="enter array element "><br>
+            <input type="text" name="array[]" placeholder="enter array element "><br>
+            <input type="text" name="array[]" placeholder="enter array element "><br>
+            <input type="text" name="array[]" placeholder="enter array element "><br>
+            <button type="submit" onclick="findmax()" class="btn">find max</button>
+        </form>
+    </div>
+    <p id="par"></p>
+    <script>
+        var k = "max element in array is:";
+
+        function findmax() {
+            var arr = document.getElementsByName('array[]');
+
+            for (var i = 0; i < arr.length; i++) {
+                var max = arr[i];
+                k = k + "array[" + i + "].value=" + max.value + " ";
+
+            }
+            document.getElementById("par").innerHTML = k;
+            document.getElementById("po").innerHTML = "Output";
+
+            for (var i = 0; i < arr.length; i++) {
+                var findm = arr[0];
+                if (findm > arr[i]) {
+                    findm = arr[i];
+                }
+            }
+            document.write(findm);
+        }
+    </script>
+</body>
+
+</html>

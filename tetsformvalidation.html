@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .btn:hover {
+            background-color: rgb(37, 78, 37);
+            color: antiquewhite;
+        }
+        
+        .button {
+            padding-bottom: 4%;
+        }
+        
+        .btn {
+            margin-left: 40px;
+            background-color: rgb(26, 135, 224);
+            border: none;
+            border-radius: 10%;
+            height: 4vh;
+            width: auto;
+            color: aliceblue;
+        }
+        
+        *input {
+            border: none;
+        }
+        
+        .inner {
+            display: inline-flexbox;
+            margin: 50px;
+        }
+        
+        .h1 {
+            margin-top: 20%;
+            padding-top: 2%;
+        }
+        
+        .table {
+            width: 200;
+        }
+        
+        .main {
+            background: blueviolet;
+            width: 150vh;
+            align-items: center;
+            margin-left: 10%;
+            margin-top: 10%;
+        }
+        
+        *hr {
+            color: rgb(22, 119, 204);
+        }
+        
+        .error {
+            color: rgb(237, 219, 219);
+        }
+    </style>
+</head>
+
+<body>
+    <hr>
+    <div class="main">
+
+        <div class="container">
+            <div class="inner">
+                <div class="h1" align="center">
+                    <h1>Sign Up !</h1>
+                </div>
+                <div class="table">
+                    <table cellspacing="2" align="center" cellpadding="8" border="0">
+                        <!-- for input name -->
+                        <tr>
+                            <td> Name:</td>
+                            <td>
+                                <input type="name" name="" id="name" placeholder="enter your name " class="user" id="username"><br><span id="nerror" class="error" type="usern" name="e"></span>
+                            </td>
+                        </tr>
+                        <!-- for input email -->
+                        <tr>
+                            <td> Email:</td>
+                            <td>
+                                <input type="email" name="" id="user" placeholder="enter email id" class="user" id="username"><br><span id="uerror" class="error" type="usern" name="e"></span>
+                            </td>
+                        </tr>
+                        <!-- for input contact -->
+                        <tr>
+                            <td> Contact:</td>
+                            <td>
+                                <input type="contact" name="" id="contact" placeholder="enter 10 digit contact no" class="user"><br><span id="cerror" class="error" type="usern" name="e"></span>
+                            </td>
+                        </tr>
+                        <!-- for input password -->
+                        <tr>
+                            <td>Password:</td>
+                            <td><input type="text" name="" id="pass" class="pwd" placeholder="enter  8 character password"><br><span id="perror" class="error" type="usern" name="e"></span></td>
+                        </tr>
+                        <!-- for input confirm password -->
+
+                        <!-- button for sumbit data -->
+                        <tr class="button">
+                            <td><button type="submit" class="btn" onclick="signup()">Submit</button></td>
+                            <td><button type="reset" class="btn">Cancel</button></td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="testformvalid.js"></script>
+    <hr>
+</body>
+
+</html>

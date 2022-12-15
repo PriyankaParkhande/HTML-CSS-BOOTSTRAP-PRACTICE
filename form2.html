@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form2.css">
+    
+</head>
+
+<body>
+    <div class="cont">
+        <div class="">
+            <form action="" method="get">
+                <div class="">
+                    <h1>Sign up Here! </h1>
+                    <label for="">User Name</label>
+                    <input type="text" placeholder="enter your user name" id="labl" />
+                    <br>
+                    <span class="error" id="uerror"></span>
+                </div>
+                <br>
+                <div class="">
+                    <label for="">Password</label>
+                    <input type="password" placeholder="enter here password" id="lab1" />
+                    <br>
+                    <span class="error" id="uerror1"></span>
+                </div>
+                <br>
+                <div class="">
+                    <label for="">Confirm Password</label>
+                    <input type="password" placeholder="enter here password" id="lab2" />
+                    <br>
+                    <span class="error" id="uerror3"></span>
+                </div>
+                <br>
+                <div class="dropdown-menu" aria-labelledby="my-dropdown">
+
+
+                    <div class="dropdown">
+                        <label for="" id="labl4">country</label>
+                        <!-- <button id="my-dropdown" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Text</button> -->
+
+                        <select class="s11" name="" id="s1" placeholder="select city" title="sele" >
+                            <option value="">choose</option>
+                            <option value="">India</option>
+                            <option value="">UK</option>
+                            <option>US</OPTION>
+                            <OPTION>CANADA</OPTION>
+                            <OPTION>GERMANY</OPTION>
+                        </select>
+
+
+
+                    </div>
+                </div>
+                <span class="error" id="uerror4"></span>
+                <br>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label for="">Gender</label>
+                    <label class="btn btn-primary" id="labl5">
+                        <input type="radio"> male
+                        <input type="radio"> female
+                    </label>
+                </div>
+                <br>
+                <span class="error" id="uerror5"></span>
+                <div class="btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-primary">
+                        Active
+                        <input type="checkbox">
+                    </label>
+                </div>
+                <br>
+                <div class="bb">
+                    <!-- <a href="form1.html"> -->
+                    <button class="btn1" type="button" onclick="login()">
+                        submit
+                    </button>
+                    <!-- </a> -->
+
+                    &nbsp &nbsp &nbsp
+
+                    <button type="button" class="btn1">
+                        cancel
+                    </button>
+
+                </div>
+
+
+
+            </form>
+        </div>
+    </div>
+    <script src="form2.js"></script>
+</body>
+
+</html>

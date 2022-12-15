@@ -1,0 +1,358 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    height: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* for navigation */
+
+.container {
+    width: 1530px;
+    height: 476px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 5s;
+    animation-name: animate;
+    animation-direction: alternate-reverse;
+    animation-duration: 20s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-play-state: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes animate {
+    0% {
+        background-image: url(care.gif);
+    }
+    25% {
+        background-image: url(banner1.png);
+    }
+    50% {
+        background-image: url(banner2.gif);
+    }
+    75% {
+        background-image: url(banner3.jpg);
+    }
+    100% {
+        background-image: url(banner4.gif);
+    }
+}
+
+header {
+    width: 100%;
+    height: 100;
+}
+
+li {
+    display: inline-block;
+    color: white;
+}
+
+.logo {
+    position: absolute;
+}
+
+nav a {
+    width: 100px;
+    display: block;
+    padding: 15px 15px;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+
+nav {
+    width: 100%;
+    background: #46d2eb00;
+    overflow: hidden;
+}
+
+ul {
+    padding: 0;
+    margin: 0 0 0 160px;
+    text-align: center;
+}
+
+ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.sampleimg img {
+    width: 100%;
+    height: 50%;
+}
+
+.menu a:hover {
+    color: white;
+    background-color: #064694e3;
+    transition: 0.6s ease;
+    border-radius: 2px;
+}
+
+li input {
+    margin-top: 12px;
+    height: 30px;
+    width: 200px;
+    margin-left: 20px;
+    border: 1px solid rgba(75, 70, 70, 0.877);
+    border-radius: 5px;
+    padding-left: 5px;
+}
+
+.sb {
+    height: 30px;
+    width: 65px;
+    color: white;
+    background-color: #064694e3;
+    border: 1px solid rgb(107, 105, 105);
+    border-radius: 5px;
+}
+
+.sb:hover {
+    color: black;
+    background-color: rgb(24, 179, 206);
+    transition: 0.6s ease;
+}
+
+.tests {
+    margin: 30px;
+}
+
+.first {
+    align-content: space-between;
+    margin-left: 30px;
+}
+
+.second {
+    margin-left: 30px;
+}
+
+
+/* copied code */
+
+a.CTA {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin-right: 16px;
+    border: 2px solid white;
+    padding: 8px;
+    transition: 0.3s;
+    background-color: transparent;
+    border-radius: 4px;
+    box-shadow: 9px 8px 8px #0505056b;
+    margin-left: 180px;
+}
+
+a.CTA:hover {
+    background-color: #11a8e4;
+}
+
+.CTA-block {
+    padding: 16px 0;
+}
+
+.tile {
+    display: inline-block;
+    width: 30%;
+    margin: auto;
+    background: #2EA7DB;
+    padding: 16px;
+    color: white;
+    border-radius: 5px;
+}
+
+.img-res1 {
+    max-width: 100%;
+    margin-left: 29px;
+    border-radius: 7px;
+    margin-bottom: 8px;
+    box-shadow: 10px 10px 10px #0000004f;
+}
+
+.img-res2 {
+    max-width: 100%;
+    margin-left: 29px;
+    border-radius: 7px;
+    margin-bottom: 8px;
+    box-shadow: 10px 10px 10px #0000004f;
+}
+
+.img-res3 {
+    max-width: 100%;
+    margin-left: 29px;
+    border-radius: 7px;
+    margin-bottom: 8px;
+    box-shadow: 10px 10px 10px #0000004f;
+}
+
+#prod-2 {
+    background: #2EA7DB;
+}
+
+div#prod-2 h {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1px;
+    letter-spacing: 10px;
+    border-bottom: 2px solid;
+    padding-bottom: 8px;
+}
+
+.tile:hover {
+    font-size: 16px;
+}
+
+.conatiner {
+    margin-bottom: 50px;
+}
+
+h3 {
+    color: #292929;
+    font-size: 20px;
+}
+
+.footer {
+    background: #4F707D;
+    color: white;
+    padding: 80px 40px;
+}
+
+.footer-col {
+    display: inline-block;
+    width: 49%;
+}
+
+ul.footer-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.footer-menu li::before {
+    display: inline-block;
+    content: "";
+    background: white;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+ul.footer-menu li {
+    margin-bottom: 8px;
+}
+
+ul.footer-menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffd5d5;
+    font-family: sans-serif;
+}
+
+div#prod-1:hover {
+    color: black;
+    background-color: #2EDB47;
+    padding-top: 30px;
+}
+
+div#prod-2:hover {
+    color: black;
+    background-color: #2EDB47;
+    padding-top: 30px;
+}
+
+div#prod-3:hover {
+    color: black;
+    background-color: #2EDB47;
+    padding-top: 30px;
+}
+
+
+/* img.img-ressponsive {
+    margin-left: 29px;
+    border-radius: 7px;
+    margin-bottom: 8px;
+    box-shadow: 6px 10px 10px #000000d6;
+} */
+
+p {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 16px 6px 17px #0000007a;
+}
+
+
+/* .foter1 {
+    display: flex;
+    gap: 164px;
+} */
+
+
+/* 
+new footer */
+
+.footer_section {
+    background: #3c3838;
+    padding: 10px;
+}
+
+a.footer_links {
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    color: #a5a5a5;
+}
+
+.social img {
+    padding-left: 3px;
+}
+
+.social {
+    margin-left: -3%;
+}
+
+a.second_num {
+    padding-left: 15px;
+}
+
+span.address {
+    padding-left: 13px;
+}
+
+.col1 {
+    display: inline-flex;
+    gap: 74px;
+}
+
+.footer {
+    text-decoration: none;
+    background: #4F707D;
+    color: white;
+    padding: 31px 40px;
+}
+
+p.footer_heading {
+    font-size: 17px;
+    color: white;
+    text-align: inherit;
+}
+
+.recomendation-panel {
+    text-align: center;
+    margin-bottom: 23px;
+}

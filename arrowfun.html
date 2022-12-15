@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>javaScript arrow function</title>
+    
+</head>
+    <body>
+        <form action="">
+            <h1>table of given no is </h1>
+            <input type="text" id="no" placeholder="enter number">
+            <button type="submit" onclick="table()">get table </button>
+        </form>
+        <script>
+            //arrow function declaration
+let table=()=>{
+var no=document.getElementById("no").value;
+//logic for print table
+for(var i=1;i<=10;i++){
+    var tab=i*no;
+    document.write("<br>"+tab);
+}
+
+}
+console.log("{table()}");//function recurtion
+        </script>
+    </body>
+</html>
